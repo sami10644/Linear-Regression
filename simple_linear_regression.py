@@ -8,10 +8,12 @@ import pandas as pd
 
 
 
+
 # Importing the dataset
 dataset = pd.read_csv('Salary_Data.csv')
 X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, -1].values
+
 
 # Splitting the dataset into the Training set and Test set
 from sklearn.model_selection import train_test_split
